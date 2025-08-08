@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
 import ForecastList from './components/ForecastList';
 import History from './components/History';
-import './App.css';
+import './App.css' ;
 
 interface WeatherData {
   main: {
@@ -44,7 +44,7 @@ const App: React.FC = () => {
       );
     } catch (err) {
       console.error(err);
-      setError('Cidade não encontrada ou erro na API. Tente novamente.');
+      setError('Cidade não encontrada ou erro na API. Tente novamente!');
       setWeather(null);
     }
   };
